@@ -1,1 +1,20 @@
-# StromaCellMarkersSpatial
+# An Image Analysis Pipeline for Quantifying the Spatial Distribution of Fluorescently-Labeled Cell Markers in Stroma-Rich Tumors
+
+![StromaCellMarkerQuant](images/fig1_workflow.png)
+
+## Overview
+This code repository provides the implementtion of a comprehensive image analysis pipeline for quantifying the spatial distributipm of fluorescently-labeled cell markers in relation to the stromal border of solid tumor environments. It is further described in Ruzette et al, 2024 (insert citation), and was successfully applied in Kozlova et al, 2024 (insert citation) to reveal the spatial distribution of NDRG1, a novel DNA repair protein, in pancreatic tumors. 
+
+
+## Features
+- Segmentation of nuclei in fluorescent images using pre-trained DL models
+- Machine-learning based composite classification of cancer cells of interest
+- Quantitative analysis of fluorescent markers across many images
+- Spatial distribution using cell-stroma 2D signed distance
+- Compatible with high-resolution whole-slide images 
+- Visualization and statistical analysis of results in Python
+
+### Software requirements
+- Python 3.7 or higher (install required packages with `pip install -r requirements.txt`)
+- QuPath 0.5 or higher
+- StarDist extension for QuPath
