@@ -15,7 +15,8 @@ This code repository provides the implementtion of a comprehensive image analysi
 - Visualization and statistical analysis of results in Python
 
 ## Datasets
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087) \\
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
+
 The images used to validate this pipeline, and resulting cell measurements tables, are free to download at https://doi.org/10.5281/zenodo.13122087.
 
 ## Software requirements
