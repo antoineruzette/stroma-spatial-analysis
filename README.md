@@ -14,6 +14,9 @@ This code repository provides the implementtion of a comprehensive image analysi
 - Compatible with high-resolution whole-slide images 
 - Visualization and statistical analysis of results in Python
 
+## Datasets
+The images used to validate this pipeline, and resulting cell measurements tables, are free to download at https://zenodo.org/records/13122087.
+
 ## Software requirements
 - Python 3.7 or higher (install required packages with `pip install -r requirements.txt`)
 - QuPath 0.5 or higher
