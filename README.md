@@ -14,7 +14,12 @@ This code repository provides the implementtion of a comprehensive image analysi
 - Compatible with high-resolution whole-slide images 
 - Visualization and statistical analysis of results in Python
 
-### Software requirements
+## Software requirements
 - Python 3.7 or higher (install required packages with `pip install -r requirements.txt`)
 - QuPath 0.5 or higher
 - StarDist extension for QuPath
+
+## Distribution
+Our image analysis pipeline is distributed as a collection of QuPath scripts for image processing and Python notebooks for statistical analysis and visualization.
+
+This repository is distributed under the MIT license. You are free to use, modify, and distribute the code as long as you provide proper attribution to the authors.
