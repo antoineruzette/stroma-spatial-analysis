@@ -3,7 +3,7 @@
 ![StromaCellMarkerQuant](images/fig1_workflow.png)
 
 ## Overview
-This code repository provides the implementtion of a comprehensive image analysis pipeline for quantifying the spatial distributipm of fluorescently-labeled cell markers in relation to the stromal border of solid tumor environments. It is further described in Ruzette et al, 2024 (insert citation), and was successfully applied in Kozlova et al, 2024 (insert citation) to reveal the spatial distribution of NDRG1, a novel DNA repair protein, in pancreatic tumors. 
+This code repository provides the implementtion of an image analysis pipeline for quantifying the spatial distributipm of fluorescently-labeled cell markers in relation to the stromal border of solid tumor environments. The pipeline is designed to process high-resolution whole-slide images of fluorescently-labeled tissue sections and consists of: (1) a deep learning-based nuclei segmentation step using StarDist, (2) a machine learning-based composite classification step and (3) a parameter sensitivity analysis and visualization step. The pipeline is implemented in QuPath (Groovy) and Python.
 
 
 ## Features
@@ -12,7 +12,7 @@ This code repository provides the implementtion of a comprehensive image analysi
 - Quantitative analysis of fluorescent markers across many images
 - Spatial distribution using cell-stroma 2D signed distance
 - Compatible with high-resolution whole-slide images 
-- Visualization and statistical analysis of results in Python
+- Visualization, sensitivity and statistical analysis of results in Python
 
 ## Datasets
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
@@ -25,6 +25,6 @@ The images used to validate this pipeline, and resulting cell measurements table
 - StarDist extension for QuPath
 
 ## Distribution
-Our image analysis pipeline is distributed as a collection of QuPath scripts for image processing and Python notebooks for statistical analysis and visualization.
+Our image analysis pipeline is distributed as a collection of Groovy scripts for image processing in QuPath and Python Jupyter notebooks for statistical analysis and visualization.
 
 This repository is distributed under the MIT license. You are free to use, modify, and distribute the code as long as you provide proper attribution to the authors.
