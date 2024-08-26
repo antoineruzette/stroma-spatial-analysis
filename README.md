@@ -22,8 +22,28 @@ This code repository provides the implementtion of an image analysis pipeline fo
 - The pipeline was developed and tested on MacOS Ventura 10.5. 
 
 
+## Datasets
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
+
+Resulting cell measurements tables, are free to download at https://doi.org/10.5281/zenodo.13122087. Download the tables and run the Jupyter notebooks to reproduce the results.
+
+
+## Running the pipeline on your own data
+To run the pipeline on your own data, follow the steps below:
+
+1. Load your images into QuPath and create a project.
+2. Run the scripts in the `QuPath` folder in the following order:
+    1. `stardist_cell_detection.groovy`
+    2. `remove_impossible_nuclei.groovy`
+    3. `cell_classification.groovy` if using threshold-based classification, otherwise follow ![instructions](https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_classification.html#train-a-cell-classifier-based-on-annotations) from QuPath to train a machine learning classifier .
+    4. `stroma_annotation.groovy` (make sure to adapt the tresholds to your images)
+    5. `measurements_export.groovy` 
+    
+3. Run cell-by-cell the Jupyter notebooks in the `Python` folder to analyze the exported measurement tables.
+
+
 ## Install dependencies
-To install the required Python packages, run the following commands in your terminal:
+To install the required Python packages in your environment, run the following commands in your terminal:
 
 ```bash
 conda create -n stroma-spatial-analysis python=3.7
@@ -32,12 +52,6 @@ pip install -r requirements.txt
 ```
 
 It should not take more than a few minutes to install all the required packages.
-
-
-## Datasets
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
-
-Resulting cell measurements tables, are free to download at https://doi.org/10.5281/zenodo.13122087. Download the tables and run the Jupyter notebooks to reproduce the results.
 
 
 ## Distribution
