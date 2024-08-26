@@ -14,15 +14,31 @@ This code repository provides the implementtion of an image analysis pipeline fo
 - Compatible with high-resolution whole-slide images 
 - Visualization, sensitivity and statistical analysis of results in Python
 
-## Datasets
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
-
-The images used to validate this pipeline, and resulting cell measurements tables, are free to download at https://doi.org/10.5281/zenodo.13122087.
 
 ## Software requirements
 - Python 3.7 or higher (install required packages with `pip install -r requirements.txt`)
 - QuPath 0.5 or higher
 - StarDist extension for QuPath
+- The pipeline was developed and tested on MacOS Ventura 10.5. 
+
+
+## Install dependencies
+To install the required Python packages, run the following commands in your terminal:
+
+```bash
+conda create -n stroma-spatial-analysis python=3.7
+conda activate stroma-spatial-analysis
+pip install -r requirements.txt
+```
+
+It should not take more than a few minutes to install all the required packages.
+
+
+## Datasets
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
+
+Resulting cell measurements tables, are free to download at https://doi.org/10.5281/zenodo.13122087. Download the tables and run the Jupyter notebooks to reproduce the results.
+
 
 ## Distribution
 Our image analysis pipeline is distributed as a collection of Groovy scripts for image processing in QuPath and Python Jupyter notebooks for statistical analysis and visualization.
