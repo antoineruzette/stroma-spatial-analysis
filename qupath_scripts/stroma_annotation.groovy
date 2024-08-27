@@ -1,3 +1,16 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-20
+ *
+ * This script annotates stromal regions based on a threshold of the Fibronectin marker, then 
+ * calculates the signed distance between cells and their closest stromal border.
+ * It also supports scanning through different threshold combinations and calculates the
+ * Pearson's correlation coefficient between the signed distance and the intensity of the marker.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
+
 import qupath.lib.objects.PathObject
 import static qupath.lib.gui.scripting.QPEx.*
 import java.nio.file.Files
@@ -6,8 +19,8 @@ import org.apache.commons.math3.stat.correlation.PearsonsCorrelation
 import org.apache.commons.math3.stat.correlation.SpearmansCorrelation
 
 // Iterate over threshold combinations
-def sigmas = (1..20).step(1).collect()
-def fn_thresholds = (3500..5500).step(200).collect()
+def sigmas = (10..15).step(1).collect()
+def fn_thresholds = (3500..4000).step(200).collect()
 
 //def sigmas = [25]
 //def fn_thresholds = [3500]

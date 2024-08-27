@@ -1,3 +1,13 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-02
+ *
+ * This script exports detection measurements to a CSV file.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
+
 import qupath.lib.objects.PathObject
 import static qupath.lib.gui.scripting.QPEx.*
 import java.nio.file.Files

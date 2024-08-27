@@ -1,3 +1,13 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-03
+ *
+ * This scripts classifies cells based on intensity thresholds of two markers.
+ * The script is designed to be run on detections.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
 import qupath.lib.objects.PathObject
 import static qupath.lib.gui.scripting.QPEx.*
 import java.nio.file.Files

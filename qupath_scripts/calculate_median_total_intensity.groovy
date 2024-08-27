@@ -1,3 +1,14 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-21
+ *
+ * This script calculates the total intensity of a marker by 
+ * multiplying the area of the object by the median intensity of the marker.
+ * The script is designed to be run on detections.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
 import qupath.lib.objects.PathObject
 import static qupath.lib.gui.scripting.QPEx.*
 import java.util.Collections

@@ -1,3 +1,13 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-14
+ *
+ * This script removes impossibly small nuclei based on a threshold area.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
+
 import qupath.lib.gui.dialogs.Dialogs
 import qupath.lib.gui.measure.ObservableMeasurementTableData;
 import qupath.lib.scripting.QP

@@ -1,3 +1,14 @@
+/**
+ * Authors: Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-23
+ *
+ * This script saves a rendered image of the current viewer to a file.
+ * The default output directory is the QuPath project's root directory.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
+
 import qupath.imagej.tools.IJTools
 import qupath.lib.gui.images.servers.RenderedImageServer
 import qupath.lib.gui.viewer.overlays.HierarchyOverlay

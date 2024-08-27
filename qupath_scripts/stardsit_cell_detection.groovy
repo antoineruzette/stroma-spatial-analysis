@@ -1,3 +1,15 @@
+/**
+ * Authors: Pete Bankhead, Antoine A. Ruzette, Simon F. Nørrelykke
+ * Date: 2024-03-16
+ *
+ * This script detects cells using StarDist, 
+ * and infers cell boundaries using an average cell radius.
+ * It requires a StarDist frozen model (see .pb file) that takes a single channel as input.
+ * 
+ * Released under the MIT License (see LICENSE file)
+ */
+
+
 import qupath.lib.gui.dialogs.Dialogs
 import qupath.lib.gui.measure.ObservableMeasurementTableData;
 import qupath.lib.scripting.QP
@@ -18,6 +30,7 @@ selectAnnotations();
 // You can find some at https://github.com/qupath/models
 // (Check credit & reuse info before downloading)
 
+// modify the path to the model
 def modelPath = "/Users/antoine/Harvard/IAC/NinaKozlova/20240111_AsPC_pNDRG1/Results/models/cell_detection/dsb2018_heavy_augment.pb"
 //def cellCytoplasmExpansion = 4 // AsPC cells
 def avgNucleusRadius = 2.5
