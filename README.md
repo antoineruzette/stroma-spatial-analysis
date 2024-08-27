@@ -25,7 +25,7 @@ This code repository provides the implementation of an image analysis pipeline f
 ## Datasets
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13122087.svg)](https://doi.org/10.5281/zenodo.13122087)
 
-Resulting cell measurements tables are free to download at https://doi.org/10.5281/zenodo.13122087. Download the tables and run the Jupyter notebooks to reproduce the results.
+Resulting cell measurements tables are free to download at https://doi.org/10.5281/zenodo.13122087. 
 
 
 ## Running the pipeline on your own data
@@ -40,6 +40,10 @@ To run the pipeline on your own data, follow the steps below:
     5. `measurements_export.groovy` 
     
 3. Run the Jupyter notebooks cell-by-cell in the `Python` folder to analyze the exported measurement tables.
+
+
+## Reproducing results
+To reproduce the spatial distribution plots found in the manuscript (Kozlova et al, 2024, Fig. 3), download the datasets (see above), run the notebooks cell-by-cell. Make sure to adapt the file paths to your local machine. 
 
 
 ## Install dependencies
