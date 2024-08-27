@@ -33,7 +33,7 @@ To run the pipeline on your own data, follow the steps below:
 
 1. Load your images into QuPath and create a project.
 2. Run the scripts in the `qupath_scripts` folder in the following order:
-    1. `stardist_cell_detection.groovy` (this step requires the StarDist extension for QuPath – instructions to install can be found [here](https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html))
+    1. `stardist_cell_detection.groovy` (this step requires the StarDist extension for QuPath – the installation tutorial can be found [here](https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html))
     2. `remove_impossible_nuclei.groovy`
     3. `cell_classification.groovy` if using threshold-based classification, otherwise follow [these instructions](https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_classification.html#train-a-cell-classifier-based-on-annotations) from QuPath to train a machine learning classifier .
     4. `stroma_annotation.groovy` (make sure to adapt the thresholds to your images)
