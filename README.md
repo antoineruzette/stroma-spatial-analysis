@@ -29,7 +29,7 @@ Resulting cell measurements tables are free to download at https://doi.org/10.52
 
 
 ## Reproducing results
-To reproduce the spatial distribution plots found in the manuscript (Kozlova et al, 2024, Fig. 3), download the datasets (see above), run the notebooks cell-by-cell. Make sure to adapt the file paths to your local machine. 
+To reproduce the spatial distribution plots found in the manuscript (Kozlova et al, 2024, Fig. 3), download the datasets (see above), run the notebooks cell-by-cell. Make sure to adapt the file paths to your local machine. On current settings, each notebook should take about 2-5 minutes to run. 
 
 
 ## Install dependencies
